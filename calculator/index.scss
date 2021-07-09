@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap");
+
+html {
+  background: #4b7f52;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Nunito;
+}
+
+#title {
+  padding: 10px;
+  color: white;
+}
+
+.display {
+  width: 460px;
+  height: 85px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border-radius: 10px;
+  background: #26402a;
+  margin: 10px;
+}
+
+#input-display {
+  color: white;
+  font-size: 35px;
+  padding-right: 30px;
+  padding-top: 3px;
+  font-weight: 600;
+  overflow: hidden;
+  white-space: no-wrap;
+}
+
+.keys {
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(4, 60px);
+  text-align: center;
+  gap: 20px;
+  justify-items: center;
+}
+.key {
+  background: hsl(0, 0, 100%);
+  color: hsl(223, 31%, 20%);
+  border-radius: 10px;
+  height: 50px;
+  width: 100px;
+  padding-top: 17px;
+  border-bottom: solid 5px hsl(0, 0, 60%);
+  font-weight: 600;
+  font-size: 25px;
+  &:hover {
+    cursor: pointer;
+  }
+  &:active {
+    background: hsl(0, 0, 85%);
+    border-bottom: solid 3px hsl(0, 0, 60%);
+    margin-top: 2px;
+  }
+}
+
+#keyequals {
+  background: #fda99b;
+  border-bottom: solid 5px hsl(0, 0, 60%);
+  &:active {
+    border-bottom: solid 3px hsl(0, 0, 60%);
+  }
+}
